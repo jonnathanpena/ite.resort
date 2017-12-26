@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { TranslateService, LangChangeEvent } from "@ngx-translate/core";
 
 @Component({
@@ -7,10 +7,10 @@ import { TranslateService, LangChangeEvent } from "@ngx-translate/core";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  
   constructor(translate: TranslateService) {
-    translate.addLangs(["en", "es"]);
-    translate.setDefaultLang('es');
+      translate.addLangs(["en", "es"]);
+      translate.setDefaultLang('es');
   }
 
   ngOnInit() {

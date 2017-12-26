@@ -18,6 +18,8 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
+import { ModalModule } from 'ngx-bootstrap';
+
 import { AppComponent } from './app.component';
 
 
@@ -30,6 +32,7 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     HttpModule,
     TranslationsModule,
+    ModalModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,
