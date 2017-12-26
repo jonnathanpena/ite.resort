@@ -1,6 +1,9 @@
 import { Component} from '@angular/core';
 import { TranslateService, LangChangeEvent } from "@ngx-translate/core";
 
+import { MenuComponent } from './menu/menu.component';
+import { HeaderComponent } from './header/header.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

@@ -23,11 +23,15 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ModalModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
+import { MenuComponent } from './menu/menu.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
