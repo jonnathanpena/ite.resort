@@ -5,6 +5,8 @@ import { TranslationsModule } from "./translation/translation.module";
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -32,6 +34,7 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     HttpModule,
     TranslationsModule,
+    AngularFontAwesomeModule,
     ModalModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
