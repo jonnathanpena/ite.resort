@@ -4,13 +4,67 @@
             <i class="fa fa-bars fa-fw"></i>
         </a>
     </li>
-    <li class="dropdown open">
-        <a class="dropdown-toggle" aria-expanded="true">
+    <li dropdown>
+        <a dropdownToggle class="dropdown">
             <i class="gi gi-translate"></i>                
         </a>
-        <ul class="dropdown-menu dropdown-custom dropdown-options">
+        <ul *dropdownMenu class="dropdown-menu dropdown-custom dropdown-options" role="menu">
             <li class="dropdown-header text-center">Inglés</li>
             <li class="dropdown-header text-center">Español</li>
+        </ul>
+    </li>
+</ul>
+<ul class="nav navbar-nav-custom pull-right">
+    <li dropdown>
+        <a dropdownToggle class="dropdown-toggle">
+            <img src="assets/img/placeholders/avatars/avatar2.jpg" alt="avatar">
+        </a>
+        <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
+            <li class="dropdown-header text-center">Cuenta</li>
+            <li>
+                <a>
+                    <i class="fa fa-envelope-o fa-fw pull-right"></i>
+                    <span class="badge pull-right">3</span>
+                    Mensajes
+                </a>
+                <a>
+                    <i class="fa fa-envelope-o fa-fw pull-right"></i>
+                    <span class="fa fa-magnet fa-fw pull-right">3</span>
+                    Nuevos Clientes
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a>
+                    <i class="fa fa-user fa-fw pull-right"></i>
+                    Perfil
+                </a>
+                <a>
+                    <i class="fa fa-ban fa-fw pull-right"></i>
+                    Cerrar Sesión
+                </a>
+            </li>
+            <li class="dropdown-header text-center">Actividad</li>
+            <li>
+                <div class="alert alert-success alert-alt">
+                    <small>5 min</small>
+                    <br>
+                    <i class="fa fa-thumbs-up fa-fw"></i>
+                    Habitación alquilada ($90)
+                </div>
+                <div class="alert alert-info alert-alt">
+                    <small>5 min</small>
+                    <br>
+                    <i class="fa fa-money fa-fw"></i>
+                    Nueva Cotización (2)
+                </div>
+                <div class="alert alert-warning alert-alt">
+                    <small>5 min</small>
+                    <br>
+                    <i class="fa fa-bell fa-fw"></i>
+                    Nueva Requerimiento (5)
+                </div>
+            </li>
         </ul>
     </li>
 </ul>
