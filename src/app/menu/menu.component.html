@@ -34,19 +34,19 @@
 
             <ul class="sidebar-nav">
                 <li>
-                    <a class="active">
+                    <a [routerLink]="['']" [ngClass]="menu.menu.escritorio">
                         <i class="gi gi-dashboard"></i>
                         {{ 'Escritorio' | translate }}
                     </a>                    
                 </li>
                 <li>
-                    <a class="">
+                    <a [ngClass]="menu.menu.empresa" [routerLink]="['/empresa']">
                         <i class="gi gi-bank"></i>
                         {{ 'Empresa' | translate }}
                     </a>                    
                 </li>
                 <li>
-                    <a class="">
+                    <a [ngClass]="menu.menu.usuarios" [routerLink]="['/usuarios/nuevo']">
                         <i class="gi gi-user"></i>
                         {{ 'Usuarios' | translate }}
                     </a>                    

@@ -1,17 +1,19 @@
+<!-- Header -->
 <div class="content-header">
     <ul class="nav-horizontal text-center">
-        <li class="active">
-            <a>
-                <i class="fa fa-bank"></i>
-                Detalles Empresa
-            </a>
+        <li [ngClass]="menu.menu.detalle">
+            <a href="/empresa"><i class="fa fa-bank"></i>Detalles</a>
         </li>
-        <li class="">
-            <a>
-                <i class="fa fa-building-o"></i>
-                Sucursales
-            </a>
+        <li [ngClass]="menu.menu.propiedades">
+            <a [routerLink]="['/empresa/propiedades']"><i class="fa fa-building-o"></i>Propiedades</a>
+        </li>
+        <li [ngClass]="menu.menu.departamentos">
+            <a [routerLink]="['/empresa/departamentos']"><i class="gi gi-briefcase"></i> Departamentos</a>
+        </li>
+        <li [ngClass]="menu.menu.roles"> 
+            <a [routerLink]="['/empresa/roles']"><i class="gi gi-pencil"></i> Roles</a>
         </li>
     </ul>
 </div>
-<detalle-empresa></detalle-empresa>
+<!-- FIN HEADER -->
+<router-outlet></router-outlet>

@@ -1,0 +1,13 @@
+<!-- Header -->
+<div class="content-header">
+    <ul class="nav-horizontal text-center">
+        <li [ngClass]="menu.menu.nuevo">
+            <a [routerLink]="['/usuarios/nuevo']"><i class="fa fa-user"></i> Nuevo Usuario</a>
+        </li>
+        <li [ngClass]="menu.menu.listar">
+            <a [routerLink]="['/usuarios/listar']"><i class="fa fa-users"></i> Listar Usuarios</a>
+        </li>
+    </ul>
+</div>
+<!-- FIN HEADER -->
+<router-outlet></router-outlet>

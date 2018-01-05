@@ -2,17 +2,17 @@ import { Component } from '@angular/core';
 import { EmpresaMenuProvider } from '../menu.provider';
 
 @Component({
-  selector: 'detalle-empresa',
-  templateUrl: 'detalle-empresa.component.html',
-  styleUrls: ['detalle-empresa.component.css']
+  selector: 'roles',
+  templateUrl: 'roles.component.html',
+  styleUrls: ['roles.component.css']
 })
-export class DetalleEmpresaComponent {
+export class RolesComponent {
   constructor(private menu: EmpresaMenuProvider) {
     this.menu.setMenu({
-      detalle: 'active',
+      detalle: '',
       propiedades: '',
       departamentos: '',
-      roles: ''
+      roles: 'active'
     });
   }
 }
